@@ -43,7 +43,7 @@ const Head = () => {
     dispatch(toggleMenu());
   };
   return (
-    <div className="grid grid-flow-col p-5 m-2 shadow-lg">
+    <div className="grid grid-flow-col p-4 m-2 shadow-lg">
       <div className="flex col-span-1">
         <img
           onClick={() => toggleMenuHandler()}
@@ -74,7 +74,7 @@ const Head = () => {
           </button>
         </div>
         {showSuggestions && (
-          <div className="absolute bg-white py-2 px-2 w-[37rem] shadow-lg rounded-lg border border-gray-100">
+          <div className="absolute bg-white py-2 px-2 w-[32rem] shadow-lg rounded-lg border border-gray-100">
             <ul>
               {suggestions.map((s) => (
                 <li key={s} className="py-2 px-3 shadow-sm hover:bg-gray-100">
